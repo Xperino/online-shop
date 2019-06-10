@@ -4,6 +4,7 @@ class ProductList {
     fetch(productsUrl)
       .then(result => result.json())
       .then(products => {
+
         this.products = products;
         this.renderProducts(renderContainer, products);
         this.addEventListeners();
